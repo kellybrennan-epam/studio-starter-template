@@ -2,6 +2,7 @@ import {
   defineBreakpoints,
   defineComponents,
   defineDesignTokens,
+  CONTENTFUL_COMPONENTS,
 } from "@contentful/experiences-sdk-react";
 import StudioConfig from "../../studio.config";
 import { SiteButtonDefinition, SiteButtonComponent } from "@studio/SiteButton";
@@ -25,7 +26,16 @@ defineComponents([
   /*
    * After a new folder is created in '/_components' you need to register it below in a JSON format
    */
-]);
+],
+  {
+    enabledBuiltInComponents: [
+      CONTENTFUL_COMPONENTS.button.id,
+      CONTENTFUL_COMPONENTS.divider.id,
+      CONTENTFUL_COMPONENTS.heading.id,
+      CONTENTFUL_COMPONENTS.richText.id,
+      CONTENTFUL_COMPONENTS.text.id,
+    ],
+  });
 defineBreakpoints([
   {
     id: "desktop",
