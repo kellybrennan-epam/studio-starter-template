@@ -12,13 +12,13 @@ import {
 } from "@studio/ExternalVideo";
 
 defineComponents([
-  {
-    component: SiteButtonComponent,
-    definition: SiteButtonDefinition,
-    options: {
-      wrapComponent: false,
-    },
-  },
+  // {
+    // component: SiteButtonComponent,
+    // definition: SiteButtonDefinition,
+    // options: {
+      // wrapComponent: false,
+    // },
+  // },
   {
     component: ExternalVideoComponent,
     definition: ExternalVideoDefinition,
